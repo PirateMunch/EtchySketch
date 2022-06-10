@@ -2,6 +2,19 @@ const addColorButtons = document.querySelectorAll('.featurebutton');
 const userColorPicker = document.querySelector('#input-color');
 let color = 'black';
 
+//set CSS variable for mobile screens
+const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+  };
+
+  resizeOps();
+  window.addEventListener("resize", resizeOps);
+
+var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+
 // Grid function, which receives optional parameter specifying the number of cells
 function newGrid(numberCells) {
     numberCells = numberCells || 16;

@@ -1,8 +1,11 @@
 # EtchySketch
 Etch-A-Sketch project
 
-Creating an Etch-A-Sketch is a nice project. I'm old enough to remember them as a child! This will be done thru Dom manipulation and Flexbox's.  
-I have actually started to like Flexbox after being fustrated with them for weeks! <<add more boxes will be the answer!>>
-Also got very side tracked with my last project and DoM manipulation for fancy buttons.   
+Creating an Etch-A-Sketch following the odin project brief.
 
-couldn't find a way to style the pop up without loading things i havent learnt yet.
+getting the inital game working was easy enough. Making it work with various modes and grid size was a challange and required complete code re-write.
+
+making it responsive and to fit on most mobile devices aswell as on large screens has been tough.
+
+link to game
+https://piratemunch.github.io/EtchySketch/
