@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etchy Sketch</title>
-    <link type="text/css" rel="stylesheet"  href="style.css">
-    
+  <meta charset="utf-8">
+  <title>Etch-a-Sketch Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
 </head>
-<!--
-    use more comments!!
--->
+
 <body>
-    <div id="container">
+    <header>Etchy&nbsp;Sketch</header>
+  <div class="container">
+    <div class="menucontainer">
+      <button class="featurebutton" id="resetbutton" onclick="resetGrid()">New&nbsp;grid</button>
+      <button class="featurebutton" id="blackbutton" data-color="black">&nbsp;&nbsp;Black&nbsp;&nbsp;</button>
+      <button class="featurebutton" id="rainbowbutton" data-color="rainbow">Rainbow</button>
     </div>
-    <script src="etchy.js"></script>
+    
+    <div id="maincontainer"></div>
+    
+    <div class="menucontainer">
+      <button class="featurebutton" id="opaquebutton" data-color="opaque">gradiant</button>
+      <button class="featurebutton" id="selectbutton">&nbsp;&nbsp;color&nbsp;:&nbsp;<input type="color" value="#bada55" id="input-color"></button>
+      <button class="featurebutton" id="eraserbutton" data-color="eraser">Eraser&nbsp;</button>
+    </div>
+    
+  </div>
+    <footer>
+      <div>PirateMunch</div><div>Etch-a-Sketch Project.</div>
+    </footer>
+  <script src="etchy.js"></script>
 </body>
+
 </html>
